@@ -1,4 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
-	
-</mx:Application>
+<mx:Module
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	implements="fam.assets.IFamAssets"
+	layout="absolute">
+
+	<mx:Script>
+		<![CDATA[
+			import fam.assets.ISubFamAssets;
+			import fam.assets.SubFamAssets;
+
+			[Embed( "/../assets/120px-Face-monkey.svg.png" )]
+			private const _image1:Class;
+			public function get image1():Class
+			{
+				return _image1;
+			}
+
+			private const _subFamAssets:SubFamAssets = new SubFamAssets();
+			public function get subFamAssets():ISubFamAssets
+			{
+				return _subFamAssets;
+			}
+		]]>
+	</mx:Script>
+
+</mx:Module>

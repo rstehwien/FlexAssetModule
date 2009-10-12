@@ -1,4 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
-	
+<mx:Application
+	xmlns:mx="http://www.adobe.com/2006/mxml"
+	creationComplete="onCreationComplete()"
+	layout="vertical">
+
+	<mx:Script>
+		<![CDATA[
+			import fam.assets.AssetManager;
+			private function onCreationComplete():void
+			{
+				AssetManager.instance.load("FamModule.swf");
+			}
+		]]>
+	</mx:Script>
+
+	<mx:Label text="Images Below Loaded from Module"/>
+	<mx:Image source="{AssetManager.instance.famAssets.image1}"/>
+	<mx:Image source="{AssetManager.instance.famAssets.subFamAssets.image1}"/>
+
 </mx:Application>

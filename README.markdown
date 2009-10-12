@@ -11,9 +11,7 @@ interface that can be used by the application to use those assets.
 # PROJECTS
 * FamLibrary - Asset interface (and module loading) library shared
 between the FamModule and FamApplication.
-
 * FamModule - The asset module.
-
 * FamApplication - The application that makes use of the shared assets.
 
 # DEMO

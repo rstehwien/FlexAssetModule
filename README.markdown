@@ -9,12 +9,12 @@ will be the only one who needs to compile the embedded assets and an
 interface that can be used by the application to use those assets.
 
 # PROJECTS
-FamLibrary - Asset interface (and module loading) library shared
+* FamLibrary - Asset interface (and module loading) library shared
 between the FamModule and FamApplication.
 
-FamModule - The asset module.
+* FamModule - The asset module.
 
-FamApplication - The application that makes use of the shared assets.
+* FamApplication - The application that makes use of the shared assets.
 
 # DEMO
 1. Download the project

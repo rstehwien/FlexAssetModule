@@ -1,0 +1,9 @@
+/* CSS file */
+Button {
+    borderColor: red;
+    icon: Embed(source="/../assets/120px-Face-smile.png");
+}
+
+Application {
+	background-image: Embed(source="/../assets/backgrounds.swf#tartan");
+}

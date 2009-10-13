@@ -1,0 +1,10 @@
+/* CSS file */
+Button {
+    borderColor: red;
+    icon: Embed(source="/../assets/120px-Fruit-cherries.png");
+}
+
+
+Application {
+	background-image: Embed(source="/../assets/backgrounds.swf#bluestripe");
+}

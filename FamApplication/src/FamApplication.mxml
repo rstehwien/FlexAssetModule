@@ -6,10 +6,30 @@
 
 	<mx:Script>
 		<![CDATA[
+			private var _smileStyle:Boolean = true;
+
 			import fam.assets.AssetManager;
 			private function onCreationComplete():void
 			{
+				onMonkeyButtonClick(null);
+
 				AssetManager.instance.load("FamModule.swf");
+			}
+
+			private function onMonkeyButtonClick(event:Event):void
+			{
+				_smileStyle = !_smileStyle;
+
+				if (_smileStyle)
+				{
+					buttonMonkey.label="Hello Smile Style - CLICK ME"
+					StyleManager.loadStyleDeclarations("famStylesSmile.swf");
+				}
+				else
+				{
+					buttonMonkey.label="Hello Cherry Style - CLICK ME"
+					StyleManager.loadStyleDeclarations("famStylesCherry.swf");
+				}
 			}
 		]]>
 	</mx:Script>
@@ -17,5 +37,6 @@
 	<mx:Label text="Images Below Loaded from Module"/>
 	<mx:Image source="{AssetManager.instance.famAssets.image1}"/>
 	<mx:Image source="{AssetManager.instance.famAssets.subFamAssets.image1}"/>
+	<mx:Button id="buttonMonkey" click="onMonkeyButtonClick(event)"/>
 
 </mx:Application>

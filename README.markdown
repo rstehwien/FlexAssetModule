@@ -25,5 +25,8 @@ between the FamModule and FamApplication.
 # IMAGES
 Images Public Domain From:
 
+* <http://commons.wikimedia.org/wiki/Tango_icons>
 * <http://commons.wikimedia.org/wiki/File:Face-monkey.svg>
 * <http://commons.wikimedia.org/wiki/File:Hamsa_hand.svg>
+* <http://commons.wikimedia.org/wiki/File:Fruit-cherries.svg>
+* <http://commons.wikimedia.org/wiki/File:Face-smile.svg>
